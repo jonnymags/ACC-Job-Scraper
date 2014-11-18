@@ -49,10 +49,10 @@ def record_results(write_data):
 
 def new_results_notifcation():
 
-	# Sends an SMS notification that there is a new listing
+	# Sends an SMS notification saying there is a new listing
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login('<email address>', '<password')
+	server.login('<email address>', '<password>')
 	server.sendmail('<FROM ADDRESS>', '<TO ADDRESS>', 'There is a new job listing! Check it out!')
 	server.quit()
 
