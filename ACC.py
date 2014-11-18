@@ -52,8 +52,8 @@ def new_results_notifcation():
 	# Sends an SMS notification that there is a new listing
 	server = smtplib.SMTP('smtp.gmail.com', 587)
 	server.starttls()
-	server.login('jmagiera23@gmail.com', 'Czesc2009')
-	server.sendmail('Jon', '2817574366@txt.att.net', 'There is a new job listing! Check it out!')
+	server.login('<email address>', '<password')
+	server.sendmail('<FROM ADDRESS>', '<TO ADDRESS>', 'There is a new job listing! Check it out!')
 	server.quit()
 
 
